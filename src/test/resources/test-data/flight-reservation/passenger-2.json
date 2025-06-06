@@ -1,0 +1,11 @@
+{
+  "firstName"     : "Sunny",
+  "lastName"      : "Gavaskar ",
+  "email"         : "sg@pop.com",
+  "password"      : "s&g",
+  "street"        : "123 Main St",
+  "city"          : "London",
+  "zip"           : "10001",
+  "passengerCount": "Two",
+  "expectedPrice" : "$1169 USD"
+}

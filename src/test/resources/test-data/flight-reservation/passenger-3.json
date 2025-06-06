@@ -1,0 +1,11 @@
+{
+  "firstName"     : "Allan",
+  "lastName"      : "Border ",
+  "email"         : "ab@pop.com",
+  "password"      : "a&b",
+  "street"        : "123 Main St",
+  "city"          : "Melbourne",
+  "zip"           : "10001",
+  "passengerCount": "Three",
+  "expectedPrice" : "$1753 USD"
+}

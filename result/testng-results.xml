@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="0" failed="0" skipped="20">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-02T05:18:35 UTC" name="Flight Reservation Test Suite" finished-at="2025-05-02T05:18:46 UTC" duration-ms="10566">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.AB.cucumber.options.TestRunner@2b91004a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-05-02T05:18:35 UTC" name="Cucumber Tests" finished-at="2025-05-02T05:18:35 UTC" duration-ms="150">
+      <class name="com.AB.cucumber.options.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.AB.cucumber.options.TestRunner@2b91004a]" started-at="2025-05-02T05:18:35 UTC" name="setUpClass" finished-at="2025-05-02T05:18:35 UTC" duration-ms="123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7bd7d6d6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.AB.cucumber.options.TestRunner@2b91004a]" started-at="2025-05-02T05:18:35 UTC" name="tearDownClass" finished-at="2025-05-02T05:18:35 UTC" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.AB.cucumber.options.TestRunner -->
+    </test> <!-- Cucumber Tests -->
+    <test started-at="2025-05-02T05:18:35 UTC" name="passengers-count-4" finished-at="2025-05-02T05:18:46 UTC" duration-ms="10312">
+      <class name="com.AB.tests.flightReservation.FlightReservationTest">
+        <test-method is-config="true" signature="setupConfig()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@f09733f]" started-at="2025-05-02T05:18:35 UTC" name="setupConfig" finished-at="2025-05-02T05:18:35 UTC" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupConfig -->
+        <test-method is-config="true" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@f09733f]" started-at="2025-05-02T05:18:35 UTC" name="setupDriver" finished-at="2025-05-02T05:18:46 UTC" duration-ms="10280" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6c5b3a2a]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at com.AB.tests.AbstractTest.getRemoteDriver(AbstractTest.java:59)
+at com.AB.tests.AbstractTest.setupDriver(AbstractTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+... 4 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:568)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+... 8 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:492)
+... 3 more
+Caused by: java.net.ConnectException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+... 10 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@f09733f]" started-at="2025-05-02T05:18:46 UTC" name="setParameters" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.AbstractTest.setupDriver" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@f09733f]" started-at="2025-05-02T05:18:46 UTC" name="userRegistrationTest" finished-at="2025-05-02T05:18:46 UTC" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at com.AB.tests.AbstractTest.getRemoteDriver(AbstractTest.java:59)
+at com.AB.tests.AbstractTest.setupDriver(AbstractTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+... 4 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:568)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+... 8 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:492)
+... 3 more
+Caused by: java.net.ConnectException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+... 10 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@f09733f]" started-at="2025-05-02T05:18:46 UTC" name="registrationConfirmationTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@f09733f]" started-at="2025-05-02T05:18:46 UTC" name="flightSearchTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@f09733f]" started-at="2025-05-02T05:18:46 UTC" name="flightSelectionTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightConfirmationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@f09733f]" started-at="2025-05-02T05:18:46 UTC" name="flightConfirmationTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@f09733f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@f09733f]" started-at="2025-05-02T05:18:46 UTC" name="tearDown" finished-at="2025-05-02T05:18:46 UTC" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.AB.tests.flightReservation.FlightReservationTest -->
+    </test> <!-- passengers-count-4 -->
+    <test started-at="2025-05-02T05:18:35 UTC" name="passengers-count-2" finished-at="2025-05-02T05:18:46 UTC" duration-ms="10562">
+      <class name="com.AB.tests.flightReservation.FlightReservationTest">
+        <test-method is-config="true" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@229c6181]" started-at="2025-05-02T05:18:35 UTC" name="setupDriver" finished-at="2025-05-02T05:18:46 UTC" duration-ms="10523" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c693f66]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at com.AB.tests.AbstractTest.getRemoteDriver(AbstractTest.java:59)
+at com.AB.tests.AbstractTest.setupDriver(AbstractTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+... 4 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:568)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+... 8 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:492)
+... 3 more
+Caused by: java.net.ConnectException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+... 10 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@229c6181]" started-at="2025-05-02T05:18:46 UTC" name="setParameters" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.AbstractTest.setupDriver" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@229c6181]" started-at="2025-05-02T05:18:46 UTC" name="userRegistrationTest" finished-at="2025-05-02T05:18:46 UTC" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at com.AB.tests.AbstractTest.getRemoteDriver(AbstractTest.java:59)
+at com.AB.tests.AbstractTest.setupDriver(AbstractTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+... 4 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:568)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+... 8 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:492)
+... 3 more
+Caused by: java.net.ConnectException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+... 10 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@229c6181]" started-at="2025-05-02T05:18:46 UTC" name="registrationConfirmationTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181 depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181 depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@229c6181]" started-at="2025-05-02T05:18:46 UTC" name="flightSearchTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181 depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181 depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@229c6181]" started-at="2025-05-02T05:18:46 UTC" name="flightSelectionTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181 depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181 depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightConfirmationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@229c6181]" started-at="2025-05-02T05:18:46 UTC" name="flightConfirmationTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181 depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181 depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@229c6181]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@229c6181]" started-at="2025-05-02T05:18:46 UTC" name="tearDown" finished-at="2025-05-02T05:18:46 UTC" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.AB.tests.flightReservation.FlightReservationTest -->
+    </test> <!-- passengers-count-2 -->
+    <test started-at="2025-05-02T05:18:35 UTC" name="passengers-count-1" finished-at="2025-05-02T05:18:46 UTC" duration-ms="10566">
+      <class name="com.AB.tests.flightReservation.FlightReservationTest">
+        <test-method is-config="true" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@3012646b]" started-at="2025-05-02T05:18:35 UTC" name="setupDriver" finished-at="2025-05-02T05:18:46 UTC" duration-ms="10541" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7ad64855]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at com.AB.tests.AbstractTest.getRemoteDriver(AbstractTest.java:59)
+at com.AB.tests.AbstractTest.setupDriver(AbstractTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+... 4 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:568)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+... 8 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:492)
+... 3 more
+Caused by: java.net.ConnectException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+... 10 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@3012646b]" started-at="2025-05-02T05:18:46 UTC" name="setParameters" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.AbstractTest.setupDriver" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@3012646b]" started-at="2025-05-02T05:18:46 UTC" name="userRegistrationTest" finished-at="2025-05-02T05:18:46 UTC" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at com.AB.tests.AbstractTest.getRemoteDriver(AbstractTest.java:59)
+at com.AB.tests.AbstractTest.setupDriver(AbstractTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+... 4 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:568)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+... 8 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:492)
+... 3 more
+Caused by: java.net.ConnectException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+... 10 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@3012646b]" started-at="2025-05-02T05:18:46 UTC" name="registrationConfirmationTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@3012646b]" started-at="2025-05-02T05:18:46 UTC" name="flightSearchTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@3012646b]" started-at="2025-05-02T05:18:46 UTC" name="flightSelectionTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightConfirmationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@3012646b]" started-at="2025-05-02T05:18:46 UTC" name="flightConfirmationTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@3012646b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@3012646b]" started-at="2025-05-02T05:18:46 UTC" name="tearDown" finished-at="2025-05-02T05:18:46 UTC" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.AB.tests.flightReservation.FlightReservationTest -->
+    </test> <!-- passengers-count-1 -->
+    <test started-at="2025-05-02T05:18:35 UTC" name="passengers-count-3" finished-at="2025-05-02T05:18:46 UTC" duration-ms="10554">
+      <class name="com.AB.tests.flightReservation.FlightReservationTest">
+        <test-method is-config="true" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@791f145a]" started-at="2025-05-02T05:18:35 UTC" name="setupDriver" finished-at="2025-05-02T05:18:46 UTC" duration-ms="10524" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@332d24a8]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at com.AB.tests.AbstractTest.getRemoteDriver(AbstractTest.java:59)
+at com.AB.tests.AbstractTest.setupDriver(AbstractTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+... 4 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:568)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+... 8 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:492)
+... 3 more
+Caused by: java.net.ConnectException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+... 10 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@791f145a]" started-at="2025-05-02T05:18:46 UTC" name="setParameters" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.AbstractTest.setupDriver" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@791f145a]" started-at="2025-05-02T05:18:46 UTC" name="userRegistrationTest" finished-at="2025-05-02T05:18:46 UTC" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1274e7bfc9a1', ip: '172.17.0.2'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
+at com.AB.tests.AbstractTest.getRemoteDriver(AbstractTest.java:59)
+at com.AB.tests.AbstractTest.setupDriver(AbstractTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.15'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+... 4 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:568)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+... 8 more
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:492)
+... 3 more
+Caused by: java.net.ConnectException: HTTP connect timed out
+at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+... 10 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@791f145a]" started-at="2025-05-02T05:18:46 UTC" name="registrationConfirmationTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.userRegistrationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@791f145a]" started-at="2025-05-02T05:18:46 UTC" name="flightSearchTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.registrationConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@791f145a]" started-at="2025-05-02T05:18:46 UTC" name="flightSelectionTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSearchTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightConfirmationTest()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@791f145a]" started-at="2025-05-02T05:18:46 UTC" name="flightConfirmationTest" finished-at="2025-05-02T05:18:46 UTC" depends-on-methods="com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.AB.tests.flightReservation.FlightReservationTest.flightConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.AB.tests.flightReservation.FlightReservationTest.flightConfirmationTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a depends on not successfully finished methods 
+[com.AB.tests.flightReservation.FlightReservationTest.flightSelectionTest() on instance com.AB.tests.flightReservation.FlightReservationTest@791f145a]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightConfirmationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AB.tests.flightReservation.FlightReservationTest@791f145a]" started-at="2025-05-02T05:18:46 UTC" name="tearDown" finished-at="2025-05-02T05:18:46 UTC" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.AB.tests.flightReservation.FlightReservationTest -->
+    </test> <!-- passengers-count-3 -->
+  </suite> <!-- Flight Reservation Test Suite -->
+</testng-results>

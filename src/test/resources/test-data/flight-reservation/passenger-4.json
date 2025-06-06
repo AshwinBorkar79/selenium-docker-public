@@ -1,0 +1,11 @@
+{
+  "firstName"     : "Wasim",
+  "lastName"      : "Akram ",
+  "email"         : "wa@pop.com",
+  "password"      : "w&a",
+  "street"        : "123 Main St",
+  "city"          : "Melbourne",
+  "zip"           : "10001",
+  "passengerCount": "Four",
+  "expectedPrice" : "$2338 USD"
+}

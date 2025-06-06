@@ -1,0 +1,11 @@
+{
+  "firstName"     : "Michael",
+  "lastName"      : "Jackson ",
+  "email"         : "mj@pop.com",
+  "password"      : "mj",
+  "street"        : "123 Main St",
+  "city"          : "Los Angeles",
+  "zip"           : "90001",
+  "passengerCount": "One",
+  "expectedPrice" : "$584 USD"
+}
