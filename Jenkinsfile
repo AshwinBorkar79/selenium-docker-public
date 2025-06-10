@@ -6,18 +6,21 @@ pipeline{
 
         stage('Build Jar'){
             steps{
-                sh "mvn clean package -DskipTests"
+                echo 'Building JAR file...'
+                bat "mvn clean package -DskipTests"
             }
         }
         stage('Build Image'){
             steps{
-               sh "docker build -t ashwinborkar79/testjar ."
+                echo 'Building Docker image...'
+               bat "docker build -t ashwinborkar79/testjar ."
             }
         }
 
         stage('Push Image'){
             steps{
-                sh "docker push ashwinborkar79/testjar"
+                echo 'Pushing Docker image to Docker Hub...'
+                bat "docker push ashwinborkar79/testjar"
                   }
             }
         }
