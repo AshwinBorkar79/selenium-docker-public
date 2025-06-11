@@ -24,7 +24,10 @@ pipeline{
             }
             steps {
                 echo 'Pushing Docker image to Docker Hub...'
-                bat "docker login -u ${DOCKER_CREDENTIALS_ID_USR} -p ${DOCKER_CREDENTIALS_ID_PSW}"
+//                bat "docker login -u ${DOCKER_CREDENTIALS_ID_USR} -p ${DOCKER_CREDENTIALS_ID_PSW}"
+                echo "${DOCKER_CREDENTIALS_ID_PSW} > docker-pass.txt"
+                bat "docker login -u ${DOCKER_CREDENTIALS_ID_USR} --password-stdin < docker-pass.txt"
+                del docker-pass.txt
                 bat "docker push ashwinborkar79/testjar"
             }
         }
