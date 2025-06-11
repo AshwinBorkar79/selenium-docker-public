@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
 
     agent any
 
@@ -23,19 +23,16 @@ pipeline{
                 // this is the ID of the Docker Hub credentials stored in Jenkins
             }
             steps {
-                echo 'Pushing Docker image to Docker Hub...'
-//                bat "docker login -u ${DOCKER_CREDENTIALS_ID_USR} -p ${DOCKER_CREDENTIALS_ID_PSW}"
-                echo "${DOCKER_CREDENTIALS_ID_PSW} > docker-pass.txt"
-                bat "docker login -u ${DOCKER_CREDENTIALS_ID_USR} --password-stdin < docker-pass.txt"
-                del docker-pass.txt
+                echo 'Logging in and pushing Docker image...'
+                bat "docker login -u %DOCKER_CREDENTIALS_ID_USR% -p %DOCKER_CREDENTIALS_ID_PSW%"
                 bat "docker push ashwinborkar79/testjar"
             }
         }
     }
-    post{
-        always {
-            echo 'Logging out...'
-            bat "docker logout"
+        post {
+            always {
+                echo 'Logging out...'
+                bat "docker logout"
+            }
         }
     }
-}
