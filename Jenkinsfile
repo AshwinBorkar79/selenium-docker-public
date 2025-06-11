@@ -24,8 +24,7 @@ pipeline{
             }
             steps {
                 echo 'Pushing Docker image to Docker Hub...'
-                bat 'docker login -u ${DOCKER_CREDENTIALS_ID_USR} -p ${DOCKER_CREDENTIALS_ID_PSW}'
-                //use single quotes only if you are using environment variables
+                bat "docker login -u ${DOCKER_CREDENTIALS_ID_USR} -p ${DOCKER_CREDENTIALS_ID_PSW}"
                 bat "docker push ashwinborkar79/testjar"
             }
         }
