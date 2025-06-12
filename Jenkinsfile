@@ -13,7 +13,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 echo 'Building Docker image...'
-                bat "docker build -t ashwinborkar79/testjar ."
+                bat "docker build -t ashwinborkar79/testjar:latest ."
             }
         }
 
@@ -25,7 +25,9 @@ pipeline {
             steps {
                 echo 'Logging in and pushing Docker image...'
                 bat "docker login -u %DOCKER_CREDENTIALS_ID_USR% -p %DOCKER_CREDENTIALS_ID_PSW%"
-                bat "docker push ashwinborkar79/testjar"
+                bat "docker push ashwinborkar79/testjar:latest"
+                bat "docker tag ashwinborkar79/testjar:latest ashwinborkar79/testjar:${env.BUILD_NUMBER}"
+                bat "docker push ashwinborkar79/testjar:${env.BUILD_NUMBER}"
             }
         }
     }
